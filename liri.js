@@ -3,15 +3,22 @@
 /////////////////////////////////
 
 require("dotenv").config();
-
 var keys = require('./keys.js');
-
-var Spotify = require('node-spotify-api');
-
-var spotify = new Spotify(keys.spotify);
-
 var userCmd = process.argv[2];
 var userVal = process.argv.slice(3).join(" ");
+
+var Spotify = require('node-spotify-api');
+var spotify = new Spotify(keys.spotify);
+var bandsintown = require('bandsintown') /*(APP_ID)*/ ;
+
+var getConcert = function (input) {
+    bandsintown
+        .getArtistEventList(input)
+        .then(function (events) {
+            console.log(events)
+        });
+};
+
 
 /////////////////////////////////
 /////// spotify-this-song ///////
@@ -40,7 +47,7 @@ var getSong = function (input) {
                 console.log('Album: ' + results[i].album.name);
                 console.log('Song preview: ' + results[i].preview_url);
                 console.log('Full song (requires Spotify account): ' + results[i].external_urls.spotify);
-                console.log('=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=');
+                console.log('=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=');
             };
         });
 };
@@ -59,7 +66,7 @@ var getCmd = function () {
             break;
         case 'movie-this':
             getMovie(userVal);
-            break;    
+            break;
         default:
             console.log('Make sure you are entering a valid command.');
             break;
