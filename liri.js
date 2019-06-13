@@ -9,16 +9,17 @@ var userVal = process.argv.slice(3).join(" ");
 
 var Spotify = require('node-spotify-api');
 var spotify = new Spotify(keys.spotify);
-var bandsintown = require('bandsintown') /*(APP_ID)*/ ;
+var axios = require('axios');
 
 var getConcert = function (input) {
-    bandsintown
-        .getArtistEventList(input)
-        .then(function (events) {
-            console.log(events)
+    axios.get("https://rest.bandsintown.com/artists/" + input + "?app_id=codingbootcamp&date=upcoming")
+        .then(function (response) {
+            console.log(response);
+        })
+        .catch(function (error) {
+            console.log(error);
         });
 };
-
 
 /////////////////////////////////
 /////// spotify-this-song ///////
