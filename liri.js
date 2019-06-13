@@ -1,3 +1,7 @@
+/////////////////////////////////
+/////// Opening Arguments ///////
+/////////////////////////////////
+
 require("dotenv").config();
 
 var keys = require('./keys.js');
@@ -7,13 +11,15 @@ var Spotify = require('node-spotify-api');
 var spotify = new Spotify(keys.spotify);
 
 var userCmd = process.argv[2];
-var userVal = process.argv[3];
+var userVal = process.argv.slice(3).join(" ");
 
-var getSpotify = function (input) {
+/////////////////////////////////
+/////// spotify-this-song ///////
+/////////////////////////////////
+var getSong = function (input) {
     if (input === undefined) {
         input = "I Want it That Way";
     }
-
     spotify.search({
             type: "track",
             query: input
@@ -29,13 +35,35 @@ var getSpotify = function (input) {
             console.log(results[0]);
 
             for (i = 0; i < 20; i++) {
-                console.log('Name: ' + results[i].name);
-                console.log('Artists: ' + results[i].artists[0].name);
-                console.log('Link: ' + results[i].external_urls.spotify);
+                console.log('Song name: ' + results[i].name);
+                console.log('Artist: ' + results[i].artists[0].name);
                 console.log('Album: ' + results[i].album.name);
-                console.log('=-=-=-=-=-=-=-=-=-=-=-=');
+                console.log('Song preview: ' + results[i].preview_url);
+                console.log('Full song (requires Spotify account): ' + results[i].external_urls.spotify);
+                console.log('=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=');
             };
         });
 };
 
-getSpotify(userVal);
+
+/////////////////////////////////
+/////// Retrieve Command ////////
+/////////////////////////////////
+var getCmd = function () {
+    switch (userCmd) {
+        case 'spotify-this-song':
+            getSong(userVal);
+            break;
+        case 'concert-this':
+            getConcert(userVal);
+            break;
+        case 'movie-this':
+            getMovie(userVal);
+            break;    
+        default:
+            console.log('Make sure you are entering a valid command.');
+            break;
+    };
+};
+
+getCmd();
