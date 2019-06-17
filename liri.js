@@ -14,7 +14,7 @@ var spotify = new Spotify(keys.spotify);
 var axios = require('axios');
 
 var moment = require('moment');
-moment().format();
+// moment().format();
 
 ////////////////////////////
 /////// concert-this ///////
@@ -88,6 +88,34 @@ var getSong = function (input) {
         });
 };
 
+//////////////////////////
+/////// movie-this ///////
+//////////////////////////
+
+var getMovie = function (input) {
+    var noInput = false;
+    if (input === '') {
+        input = 'Mr. Nobody';
+        noInput = true;
+    };
+    axios.get("http://www.omdbapi.com/?apikey=trilogy&t=" + input)
+        .then(function (response) {
+            var movie = response.data;
+            console.log('\n' + movie.Title + ' (' + movie.Year + ')');
+            console.log('Starring ' + movie.Actors);
+            console.log('Rated ' + movie.Rated);
+            console.log('Rotten Tomatoes rating: ' + movie.Ratings[1].Value);
+            console.log('Produced in ' + movie.Country);
+            console.log('Language(s): ' + movie.Language);
+            console.log('Plot: ' + movie.Plot);
+            if (noInput) {
+                console.log("If you haven't watched Mr. Nobody, you should! It's on Netflix.");
+            };
+        })
+        .catch(function (error) {
+            console.log(error);
+        });
+};
 
 /////////////////////////////////
 /////// Retrieve Command ////////
