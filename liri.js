@@ -1,6 +1,7 @@
-/////////////////////////////////
-/////// Opening Arguments ///////
-/////////////////////////////////
+//////////////////////////////////
+/////// Opening arguments, ///////
+///////    requirements    ///////
+//////////////////////////////////
 
 require("dotenv").config();
 var keys = require('./keys.js');
@@ -9,12 +10,30 @@ var userVal = process.argv.slice(3).join(" ");
 
 var Spotify = require('node-spotify-api');
 var spotify = new Spotify(keys.spotify);
+
 var axios = require('axios');
 
+var moment = require('moment');
+moment().format();
+
+////////////////////////////
+/////// concert-this ///////
+////////////////////////////
+
 var getConcert = function (input) {
-    axios.get("https://rest.bandsintown.com/artists/" + input + "?app_id=codingbootcamp&date=upcoming")
+    axios.get("https://rest.bandsintown.com/artists/" + input + "/events?app_id=codingbootcamp&date=upcoming")
         .then(function (response) {
-            console.log(response);
+            // console.log(response);
+            for (i = 0 ; i < response.data.length ; i++) {
+                console.log("");
+                concert = response.data[i];
+                var qregion = '';
+                if(concert.venue.region != '') {
+                    qregion = concert.venue.region + ', ';
+                }
+                console.log('Date & Time: ' + concert.datetime);
+                console.log('Location: ' + concert.venue.name + ", " + concert.venue.city + ", " + qregion + concert.venue.country);
+            };
         })
         .catch(function (error) {
             console.log(error);
@@ -24,9 +43,11 @@ var getConcert = function (input) {
 /////////////////////////////////
 /////// spotify-this-song ///////
 /////////////////////////////////
+
 var getSong = function (input) {
-    if (input === undefined) {
-        input = "I Want it That Way";
+    if (input === '') {
+        var randomSongs = ['I Want it That Way', 'The Sign', 'So Long, and Thanks for All the Fish'];
+        input = randomSongs[Math.floor(Math.random()*randomSongs.length)];
     }
     spotify.search({
             type: "track",
@@ -40,11 +61,13 @@ var getSong = function (input) {
 
             var results = data.tracks.items;
 
-            console.log(results[0]);
-
-            for (i = 0; i < 20; i++) {
-                console.log('Song name: ' + results[i].name);
-                console.log('Artist: ' + results[i].artists[0].name);
+            for (i = 0; i < 5; i++) {
+                console.log('Title: ' + results[i].name);
+                var artistArr = []
+                for (j = 0 ; j < results[i].artists.length ; j++) {
+                    artistArr.push(results[i].artists[j].name);
+                }
+                console.log('Artist(s): ' + artistArr.join("; "));
                 console.log('Album: ' + results[i].album.name);
                 console.log('Song preview: ' + results[i].preview_url);
                 console.log('Full song (requires Spotify account): ' + results[i].external_urls.spotify);
