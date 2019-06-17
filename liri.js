@@ -12,9 +12,8 @@ var Spotify = require('node-spotify-api');
 var spotify = new Spotify(keys.spotify);
 
 var axios = require('axios');
-
 var moment = require('moment');
-// moment().format();
+var fs = require('fs');
 
 ////////////////////////////
 /////// concert-this ///////
@@ -117,6 +116,23 @@ var getMovie = function (input) {
         });
 };
 
+///////////////////////////////
+/////// do-what-it-says ///////
+///////////////////////////////
+
+var getRandom = function () {
+    fs.readFile("random.txt", "utf8", function(error, data) {
+        if (error) {
+            return console.log(error);
+        };
+        var dataArr = data.split(",");
+        getSet = Math.floor(Math.random()*3); 
+        userCmd = dataArr[getSet*2];
+        userVal = dataArr[getSet*2+1];
+        getCmd();
+    });
+};
+
 /////////////////////////////////
 /////// Retrieve Command ////////
 /////////////////////////////////
@@ -130,6 +146,9 @@ var getCmd = function () {
             break;
         case 'movie-this':
             getMovie(userVal);
+            break;
+        case 'do-what-it-says':
+            getRandom();
             break;
         default:
             console.log('Make sure you are entering a valid command.');
