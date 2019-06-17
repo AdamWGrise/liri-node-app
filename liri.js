@@ -21,18 +21,30 @@ moment().format();
 ////////////////////////////
 
 var getConcert = function (input) {
+    if (input === '') {
+        input = 'New Kids on the Block';
+    };
     axios.get("https://rest.bandsintown.com/artists/" + input + "/events?app_id=codingbootcamp&date=upcoming")
         .then(function (response) {
-            // console.log(response);
-            for (i = 0 ; i < response.data.length ; i++) {
-                console.log("");
-                concert = response.data[i];
-                var qregion = '';
-                if(concert.venue.region != '') {
-                    qregion = concert.venue.region + ', ';
-                }
-                console.log('Date & Time: ' + concert.datetime);
-                console.log('Location: ' + concert.venue.name + ", " + concert.venue.city + ", " + qregion + concert.venue.country);
+            if (response.data.length === 0) {
+                console.log("No upcoming concerts for " + input + ". Bummer, dude.");
+            } else {
+                console.log("\nUpcoming concerts for " + response.data[0].lineup[0] + "...\n");
+                for (i = 0; i < response.data.length; i++) {
+                    concert = response.data[i];
+                    // console.log(concert);
+                    var qregion = '';
+                    if (concert.venue.region != '') {
+                        qregion = concert.venue.region + ', ';
+                    }
+                    var lineupArr = [];
+                    // for (j = 0; j < concert.lineup.length; j++) {
+                    //     lineupArr.push(concert.lineup[j]);
+                    // }
+                    // console.log(lineupArr.join("; "));
+                    console.log('Date: ' + moment(concert.datetime).format('MM/DD/YYYY'));
+                    console.log('Location: ' + concert.venue.name + ", " + concert.venue.city + ", " + qregion + concert.venue.country + "\n");
+                };
             };
         })
         .catch(function (error) {
@@ -47,7 +59,7 @@ var getConcert = function (input) {
 var getSong = function (input) {
     if (input === '') {
         var randomSongs = ['I Want it That Way', 'The Sign', 'So Long, and Thanks for All the Fish'];
-        input = randomSongs[Math.floor(Math.random()*randomSongs.length)];
+        input = randomSongs[Math.floor(Math.random() * randomSongs.length)];
     }
     spotify.search({
             type: "track",
@@ -64,7 +76,7 @@ var getSong = function (input) {
             for (i = 0; i < 5; i++) {
                 console.log('Title: ' + results[i].name);
                 var artistArr = []
-                for (j = 0 ; j < results[i].artists.length ; j++) {
+                for (j = 0; j < results[i].artists.length; j++) {
                     artistArr.push(results[i].artists[j].name);
                 }
                 console.log('Artist(s): ' + artistArr.join("; "));
