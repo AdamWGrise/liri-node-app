@@ -22,6 +22,7 @@ var fs = require('fs');
 var getConcert = function (input) {
     if (input === '') {
         input = 'New Kids on the Block';
+        userVal = 'New Kids on the Block';
     };
     axios.get("https://rest.bandsintown.com/artists/" + input + "/events?app_id=codingbootcamp&date=upcoming")
         .then(function (response) {
@@ -57,6 +58,7 @@ var getSong = function (input) {
     if (input === '') {
         var randomSongs = ['Africa', 'The Sign', 'So Long, and Thanks for All the Fish'];
         input = randomSongs[Math.floor(Math.random() * randomSongs.length)];
+        userVal = input;
     }
     spotify.search({
             type: "track",
@@ -102,6 +104,7 @@ var getMovie = function (input) {
     var noInput = false;
     if (input === '') {
         input = 'Mr. Nobody';
+        userVal = 'Mr. Nobody';
         noInput = true;
     };
     axios.get("http://www.omdbapi.com/?apikey=trilogy&t=" + input)
@@ -176,7 +179,7 @@ var getCmd = function () {
             }
         });
     } else if (doRandom === true) {
-        var logText = '\n\n\n====================================================\n' + moment().format('MMMM Do YYYY, h:mm:ss a') + '\ndo-as-it-says ; ' + userCmd + " ; " + userVal;
+        var logText = '\n\n\n====================================================\n' + moment().format('MMMM Do YYYY, h:mm:ss a') + '\ndo-what-it-says ; ' + userCmd + " ; " + userVal;
         fs.appendFile("log.txt", logText, function (err) {
             if (err) {
                 console.log(err);
