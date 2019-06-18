@@ -29,20 +29,18 @@ var getConcert = function (input) {
                 console.log("No upcoming concerts for " + input + ". Bummer, dude.");
             } else {
                 console.log("\nUpcoming concerts for " + response.data[0].lineup[0] + "...\n");
+                fs.appendFile('log.txt', '\n\n=== Upcoming concerts for ' + response.data[0].lineup[0] + '... ===', function () {});
                 for (i = 0; i < response.data.length; i++) {
                     concert = response.data[i];
-                    // console.log(concert);
                     var qregion = '';
                     if (concert.venue.region != '') {
                         qregion = concert.venue.region + ', ';
                     }
-                    var lineupArr = [];
-                    // for (j = 0; j < concert.lineup.length; j++) {
-                    //     lineupArr.push(concert.lineup[j]);
-                    // }
-                    // console.log(lineupArr.join("; "));
                     console.log('Date: ' + moment(concert.datetime).format('MM/DD/YYYY'));
                     console.log('Location: ' + concert.venue.name + ", " + concert.venue.city + ", " + qregion + concert.venue.country + "\n");
+
+                    var logText = '\n\nDate: ' + moment(concert.datetime).format('MM/DD/YYYY') + '\nLocation: ' + concert.venue.name + ", " + concert.venue.city + ", " + qregion + concert.venue.country;
+                    fs.appendFile('log.txt', logText, function () {});
                 };
             };
         })
@@ -57,7 +55,7 @@ var getConcert = function (input) {
 
 var getSong = function (input) {
     if (input === '') {
-        var randomSongs = ['I Want it That Way', 'The Sign', 'So Long, and Thanks for All the Fish'];
+        var randomSongs = ['Africa', 'The Sign', 'So Long, and Thanks for All the Fish'];
         input = randomSongs[Math.floor(Math.random() * randomSongs.length)];
     }
     spotify.search({
@@ -83,7 +81,16 @@ var getSong = function (input) {
                 console.log('Song preview: ' + results[i].preview_url);
                 console.log('Full song (requires Spotify account): ' + results[i].external_urls.spotify);
                 console.log('=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=');
+
             };
+
+            var logText = '\n\n=== First result from Spotify: ===\nTitle: ' + results[0].name + '\nArtist: ' + results[0].artists[0].name + '\nAlbum: ' + results[0].album.name + '\nSong preview: ' + results[0].preview_url
+            fs.appendFile('log.txt', logText, function () {
+                if (err) {
+                    console.log(err);
+                }
+            });
+
         });
 };
 
@@ -108,12 +115,15 @@ var getMovie = function (input) {
             console.log('Language(s): ' + movie.Language);
             console.log('Plot: ' + movie.Plot);
             if (noInput) {
-                console.log("If you haven't watched Mr. Nobody, you should! It's on Netflix.");
+                console.log("\nIf you haven't watched Mr. Nobody, you should! It's on Netflix.");
             };
+            var logText = '\n\n' + movie.Title + ' (' + movie.Year + ')\nStarring ' + movie.Actors + '\nRated ' + movie.Rated + '\nRotten Tomatoes rating: ' + movie.Ratings[1].Value + '\nProduced in ' + movie.Country + '\nLanguage(s): ' + movie.Language + '\nPlot: ' + movie.Plot;
+            fs.appendFile('log.txt', logText, function () {});
         })
         .catch(function (error) {
             console.log(error);
         });
+
 };
 
 ///////////////////////////////
@@ -121,14 +131,15 @@ var getMovie = function (input) {
 ///////////////////////////////
 
 var getRandom = function () {
-    fs.readFile("random.txt", "utf8", function(error, data) {
+    fs.readFile("random.txt", "utf8", function (error, data) {
         if (error) {
             return console.log(error);
         };
         var dataArr = data.split(",");
-        getSet = Math.floor(Math.random()*3); 
-        userCmd = dataArr[getSet*2];
-        userVal = dataArr[getSet*2+1];
+        getSet = Math.floor(Math.random() * dataArr.length / 2);
+        userCmd = dataArr[getSet * 2];
+        userVal = dataArr[getSet * 2 + 1];
+        doRandom = true;
         getCmd();
     });
 };
@@ -136,6 +147,8 @@ var getRandom = function () {
 /////////////////////////////////
 /////// Retrieve Command ////////
 /////////////////////////////////
+
+var doRandom = false;
 var getCmd = function () {
     switch (userCmd) {
         case 'spotify-this-song':
@@ -153,6 +166,23 @@ var getCmd = function () {
         default:
             console.log('Make sure you are entering a valid command.');
             break;
+    };
+
+    if (userCmd != 'do-what-it-says' && doRandom === false) {
+        var logText = '\n\n\n====================================================\n' + moment().format('MMMM Do YYYY, h:mm:ss a') + '\n' + userCmd + " ; " + userVal;
+        fs.appendFile("log.txt", logText, function (err) {
+            if (err) {
+                console.log(err);
+            }
+        });
+    } else if (doRandom === true) {
+        var logText = '\n\n\n====================================================\n' + moment().format('MMMM Do YYYY, h:mm:ss a') + '\ndo-as-it-says ; ' + userCmd + " ; " + userVal;
+        fs.appendFile("log.txt", logText, function (err) {
+            if (err) {
+                console.log(err);
+            }
+        });
+        doRandom = false;
     };
 };
 

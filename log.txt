@@ -1,0 +1,23 @@
+
+
+
+====================================================
+June 17th 2019, 11:13:27 pm
+spotify-this-song ; three libras
+
+=== First result from Spotify: ===
+Title: 3 Libras
+Artist: A Perfect Circle
+Album: Mer De Noms
+Song preview: null
+
+
+====================================================
+June 17th 2019, 11:14:04 pm
+spotify-this-song ; disillusioned
+
+=== First result from Spotify: ===
+Title: Disillusioned
+Artist: A Perfect Circle
+Album: Eat The Elephant
+Song preview: https://p.scdn.co/mp3-preview/cf5efce572d31d82a9fd5ab0ec495480518ccf38?cid=ee00dbc2d8bd49f2ad103a1ac985fb00
