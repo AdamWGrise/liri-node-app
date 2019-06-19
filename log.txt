@@ -1,0 +1,487 @@
+
+
+
+====================================================
+June 18th 2019, 10:01:28 pm
+spotify-this-song ; from out of nowhere
+
+=== First result from Spotify: ===
+Title: From out of Nowhere
+Artist: Faith No More
+Album: The Real Thing
+Song preview: https://p.scdn.co/mp3-preview/15626ace6d44aa3e19831660c6a4d3c826cd3fbe?cid=ee00dbc2d8bd49f2ad103a1ac985fb00
+
+
+====================================================
+June 18th 2019, 10:01:58 pm
+spotify-this-song ; Africa
+
+=== First result from Spotify: ===
+Title: Africa
+Artist: Toto
+Album: Toto IV
+Song preview: https://p.scdn.co/mp3-preview/dd78dafe31bb98f230372c038a126b8808f9349b?cid=ee00dbc2d8bd49f2ad103a1ac985fb00
+
+
+====================================================
+June 18th 2019, 10:02:13 pm
+concert-this ; New Kids on the Block
+
+=== Upcoming concerts for New Kids on the Block... ===
+
+Date: 06/18/2019
+Location: Little Caesars Arena, Detroit, MI, United States
+
+Date: 06/22/2019
+Location: Schottenstein Center, Columbus, OH, United States
+
+Date: 06/21/2019
+Location: KeyBank Center, Buffalo, NY, United States
+
+Date: 06/23/2019
+Location: PPG Paints Arena, Pittsburgh, PA, United States
+
+Date: 06/25/2019
+Location: Capital One Arena, Washington, DC, United States
+
+Date: 06/27/2019
+Location: Wells Fargo Center, Philadelphia, PA, United States
+
+Date: 06/19/2019
+Location: Scotiabank Arena, Toronto, Canada
+
+Date: 06/28/2019
+Location: TD Garden, Boston, MA, United States
+
+Date: 07/02/2019
+Location: Prudential Center, Newark, NJ, United States
+
+Date: 06/30/2019
+Location: Nassau Veterans Memorial Coliseum, Uniondale, NY, United States
+
+Date: 07/05/2019
+Location: Borgata Event Center, Atlantic City, NJ, United States
+
+Date: 07/03/2019
+Location: Mohegan Sun Arena, Uncasville, CT, United States
+
+Date: 06/29/2019
+Location: TD Garden, Boston, MA, United States
+
+Date: 07/06/2019
+Location: Hersheypark Stadium, Hershey, PA, United States
+
+Date: 07/10/2019
+Location: Bon Secours Wellness Arena, Greenville, SC, United States
+
+Date: 07/07/2019
+Location: PNC Arena, Raleigh, NC, United States
+
+Date: 07/09/2019
+Location: Spectrum Center, Charlotte, NC, United States
+
+Date: 07/11/2019
+Location: State Farm Arena, Atlanta, GA, United States
+
+Date: 07/12/2019
+Location: VyStar Veterans Memorial Arena, Jacksonville, FL, United States
+
+Date: 07/13/2019
+Location: Amway Center, Orlando, FL, United States
+
+Date: 07/14/2019
+Location: BB&T Center, Sunrise, FL, United States
+
+
+====================================================
+June 18th 2019, 10:02:26 pm
+concert-this ; evanescence
+
+=== Upcoming concerts for Evanescence... ===
+
+Date: 07/17/2019
+Location: The Rave / Eagles Club, Milwaukee, WI, United States
+
+Date: 07/18/2019
+Location: Country Fest, Cadott, WI, United States
+
+Date: 07/28/2019
+Location: Impact Music Festival, Bangor, ME, United States
+
+Date: 07/27/2019
+Location: Heavy Montreal Festival, Montreal, Canada
+
+Date: 09/01/2019
+Location: Riverside Open Air Aarburg, Aarburg, Switzerland
+
+Date: 09/05/2019
+Location: Městská hala Vodova, Panske Pole, Czech Republic
+
+Date: 09/07/2019
+Location: Štadión Antona Malatinského, Trnava, Slovakia
+
+Date: 09/08/2019
+Location: Budapest Arena, Budapest, Hungary
+
+Date: 09/02/2019
+Location: Arena di Verona Open Air Festival, Verona, Italy
+
+Date: 09/11/2019
+Location: Arena Armeets Sofia, Sofia, Bulgaria
+
+Date: 09/13/2019
+Location: Volkswagen Arena, Sarıyer, Turkey
+
+Date: 09/04/2019
+Location: DEPO2015, Plzen, Czech Republic
+
+Date: 09/15/2019
+Location: Arenele Romane, Bucharest, Romania
+
+Date: 09/18/2019
+Location: Sport Palace, Minsk, Belarus
+
+Date: 09/24/2019
+Location: Crocus City Hall, Krasnogorsk, Russia
+
+Date: 09/26/2019
+Location: A2 Green Concert, Sanktpeterburg, Russia
+
+Date: 09/22/2019
+Location: Grad, Voronez, Russia
+
+Date: 09/20/2019
+Location: Stereo Plaza, Kyiv, Ukraine
+
+
+====================================================
+June 18th 2019, 10:02:46 pm
+movie-this ; the princess bride
+
+The Princess Bride (1987)
+Starring Cary Elwes, Mandy Patinkin, Chris Sarandon, Christopher Guest
+Rated PG
+Rotten Tomatoes rating: 97%
+Produced in USA
+Language(s): English
+Plot: While home sick in bed, a young boy's grandfather reads him the story of a farmboy-turned-pirate who encounters numerous obstacles, enemies and allies in his quest to be reunited with his true love.
+
+
+====================================================
+June 18th 2019, 10:03:15 pm
+movie-this ; Mr. Nobody
+
+Mr. Nobody (2009)
+Starring Jared Leto, Sarah Polley, Diane Kruger, Linh Dan Pham
+Rated R
+Rotten Tomatoes rating: 67%
+Produced in Belgium, Germany, Canada, France, USA, UK
+Language(s): English, Mohawk
+Plot: A boy stands on a station platform as a train is about to leave. Should he go with his mother or stay with his father? Infinite possibilities arise from this decision. As long as he doesn't choose, anything is possible.
+
+
+====================================================
+June 18th 2019, 10:03:43 pm
+do-what-it-says ; movie-this ; ghostbusters
+
+Ghostbusters (1984)
+Starring Bill Murray, Dan Aykroyd, Sigourney Weaver, Harold Ramis
+Rated PG
+Rotten Tomatoes rating: 97%
+Produced in USA
+Language(s): English
+Plot: Three former parapsychology professors set up shop as a unique ghost removal service.
+
+
+====================================================
+June 18th 2019, 10:04:24 pm
+do-what-it-says ; concert-this ; Tool
+
+=== Upcoming concerts for Tool... ===
+
+Date: 06/20/2019
+Location: Refshaleøens Snedkeri, Kobenhavn, Denmark
+
+Date: 06/23/2019
+Location: Rue du Champ Louet, Saint-hilaire-de-clisson, France
+
+Date: 06/25/2019
+Location: Hallenstadion, Zürich, Switzerland
+
+Date: 06/28/2019
+Location: Festivalpark Werchter, Werchter, Belgium
+
+Date: 06/30/2019
+Location: Caja Mágica, Madrid, Spain
+
+Date: 07/02/2019
+Location: Altice Arena, Lisboa, Portugal
+
+
+====================================================
+June 18th 2019, 10:04:28 pm
+do-what-it-says ; concert-this ; Tool
+
+=== Upcoming concerts for Tool... ===
+
+Date: 06/20/2019
+Location: Refshaleøens Snedkeri, Kobenhavn, Denmark
+
+Date: 06/23/2019
+Location: Rue du Champ Louet, Saint-hilaire-de-clisson, France
+
+Date: 06/25/2019
+Location: Hallenstadion, Zürich, Switzerland
+
+Date: 06/28/2019
+Location: Festivalpark Werchter, Werchter, Belgium
+
+Date: 06/30/2019
+Location: Caja Mágica, Madrid, Spain
+
+Date: 07/02/2019
+Location: Altice Arena, Lisboa, Portugal
+
+
+====================================================
+June 18th 2019, 10:04:32 pm
+do-what-it-says ; concert-this ; celine dion
+
+=== Upcoming concerts for Céline Dion... ===
+
+Date: 07/05/2019
+Location: Hyde Park, London, United Kingdom
+
+Date: 09/18/2019
+Location: Centre Videotron, Quebec, Canada
+
+Date: 09/26/2019
+Location: Bell Centre, Montreal, Canada
+
+Date: 09/20/2019
+Location: Centre Videotron, Quebec, Canada
+
+Date: 09/21/2019
+Location: Centre Videotron, Quebec, Canada
+
+Date: 10/01/2019
+Location: Bell Centre, Montreal, Canada
+
+Date: 09/27/2019
+Location: Bell Centre, Montreal, Canada
+
+Date: 10/04/2019
+Location: Bell Centre, Montreal, Canada
+
+Date: 10/05/2019
+Location: Bell Centre, Montreal, Canada
+
+Date: 10/15/2019
+Location: Canadian Tire Centre, Kanata, Canada
+
+Date: 10/16/2019
+Location: Canadian Tire Centre, Kanata, Canada
+
+Date: 10/18/2019
+Location: Rocket Mortgage FieldHouse, Cleveland, OH, United States
+
+Date: 10/20/2019
+Location: Schottenstein Center, Columbus, OH, United States
+
+Date: 10/22/2019
+Location: KFC Yum! Center, Louisville, KY, United States
+
+Date: 10/26/2019
+Location: Enterprise Center, Saint Louis, MO, United States
+
+Date: 10/24/2019
+Location: U.S. Bank Arena, Cincinnati, OH, United States
+
+Date: 10/28/2019
+Location: Sprint Center, Kansas City, MO, United States
+
+Date: 09/30/2019
+Location: Bell Centre, Montreal, Canada
+
+Date: 10/30/2019
+Location: Fargodome, Fargo, ND, United States
+
+Date: 11/03/2019
+Location: Fiserv Forum, Milwaukee, WI, United States
+
+Date: 11/01/2019
+Location: Target Center, Minneapolis, MN, United States
+
+Date: 11/05/2019
+Location: Little Caesars Arena, Detroit, MI, United States
+
+Date: 12/03/2019
+Location: Bankers Life Fieldhouse, Indianapolis, IN, United States
+
+Date: 12/01/2019
+Location: United Center, Chicago, IL, United States
+
+Date: 12/05/2019
+Location: KeyBank Center, Buffalo, NY, United States
+
+Date: 12/09/2019
+Location: Scotiabank Arena, Toronto, Canada
+
+Date: 12/07/2019
+Location: Times Union Center, Albany, NY, United States
+
+Date: 12/13/2019
+Location: TD Garden, Boston, MA, United States
+
+Date: 12/14/2019
+Location: TD Garden, Boston, MA, United States
+
+Date: 01/08/2020
+Location: VyStar Veterans Memorial Arena, Jacksonville, FL, United States
+
+Date: 01/11/2020
+Location: State Farm Arena, Atlanta, GA, United States
+
+Date: 01/13/2020
+Location: Bridgestone Arena, Nashville, TN, United States
+
+Date: 01/17/2020
+Location: AmericanAirlines Arena, Miami, FL, United States
+
+Date: 01/18/2020
+Location: AmericanAirlines Arena, Miami, FL, United States
+
+Date: 01/21/2020
+Location: Spectrum Center, Charlotte, NC, United States
+
+Date: 01/30/2020
+Location: AT&T Center, San Antonio, TX, United States
+
+Date: 12/10/2019
+Location: Scotiabank Arena, Toronto, Canada
+
+Date: 02/01/2020
+Location: Toyota Center, Houston, TX, United States
+
+Date: 02/05/2020
+Location: BOK Center, Tulsa, OK, United States
+
+Date: 01/15/2020
+Location: Amalie Arena, Tampa, FL, United States
+
+Date: 02/03/2020
+Location: American Airlines Center, Dallas, TX, United States
+
+Date: 02/07/2020
+Location: Smoothie King Center, New Orleans, LA, United States
+
+Date: 02/09/2020
+Location: FedExForum, Memphis, TN, United States
+
+Date: 02/22/2020
+Location: Boardwalk Hall, Atlantic City, NJ, United States
+
+Date: 02/26/2020
+Location: Wells Fargo Center, Philadelphia, PA, United States
+
+Date: 02/24/2020
+Location: Royal Farms Arena, Baltimore, MD, United States
+
+Date: 02/11/2020
+Location: PNC Arena, Raleigh, NC, United States
+
+Date: 02/29/2020
+Location: Barclays Center, Brooklyn, NY, United States
+
+Date: 03/07/2020
+Location: Prudential Center, Newark, NJ, United States
+
+Date: 03/03/2020
+Location: Nassau Veterans Memorial Coliseum, Uniondale, NY, United States
+
+Date: 02/28/2020
+Location: Barclays Center, Brooklyn, NY, United States
+
+Date: 03/11/2020
+Location: Capital One Arena, Washington, DC, United States
+
+Date: 03/13/2020
+Location: PPG Paints Arena, Pittsburgh, PA, United States
+
+Date: 03/26/2020
+Location: Vivint Smart Home Arena, Salt Lake City, UT, United States
+
+Date: 03/30/2020
+Location: Gila River Arena, Glendale, AZ, United States
+
+Date: 04/02/2020
+Location: Staples Center, Los Angeles, CA, United States
+
+Date: 04/07/2020
+Location: Golden 1 Center, Sacramento, CA, United States
+
+Date: 04/09/2020
+Location: Oracle Arena, Oakland, CA, United States
+
+Date: 03/08/2020
+Location: Prudential Center, Newark, NJ, United States
+
+Date: 04/11/2020
+Location: Chase Center, San Francisco, CA, United States
+
+Date: 03/24/2020
+Location: Pepsi Center, Denver, CO, United States
+
+Date: 04/13/2020
+Location: Moda Center, Portland, OR, United States
+
+Date: 04/15/2020
+Location: Tacoma Dome, Tacoma, WA, United States
+
+Date: 04/17/2020
+Location: Rogers Arena, Vancouver, Canada
+
+Date: 04/21/2020
+Location: Rogers Place, Edmonton, Canada
+
+Date: 04/25/2020
+Location: Sasktel Centre, Saskatoon, Canada
+
+Date: 04/27/2020
+Location: Bell MTS Place, Winnipeg, Canada
+
+
+====================================================
+June 18th 2019, 10:04:43 pm
+do-what-it-says ; concert-this ; Tool
+
+=== Upcoming concerts for Tool... ===
+
+Date: 06/20/2019
+Location: Refshaleøens Snedkeri, Kobenhavn, Denmark
+
+Date: 06/23/2019
+Location: Rue du Champ Louet, Saint-hilaire-de-clisson, France
+
+Date: 06/25/2019
+Location: Hallenstadion, Zürich, Switzerland
+
+Date: 06/28/2019
+Location: Festivalpark Werchter, Werchter, Belgium
+
+Date: 06/30/2019
+Location: Caja Mágica, Madrid, Spain
+
+Date: 07/02/2019
+Location: Altice Arena, Lisboa, Portugal
+
+
+====================================================
+June 18th 2019, 10:04:46 pm
+do-what-it-says ; spotify-this-song ; Wonderwall
+
+=== First result from Spotify: ===
+Title: Wonderwall - Remastered
+Artist: Oasis
+Album: (What's The Story) Morning Glory? (Deluxe Edition) [Remastered]
+Song preview: https://p.scdn.co/mp3-preview/658627c1c2fb5f9a89ce556ead028b7cebd297c6?cid=ee00dbc2d8bd49f2ad103a1ac985fb00
