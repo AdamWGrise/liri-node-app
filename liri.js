@@ -20,7 +20,7 @@ var fs = require('fs');
 ////////////////////////////
 
 var getConcert = function (input) {
-    if (input === '') { // If no band name is specified
+    if (input === '' || typeof input === typeof undefined) { // If no band name is specified
         input = 'New Kids on the Block';
         userVal = 'New Kids on the Block'; // Setting userVal for log.txt logging later.
     };
@@ -64,7 +64,7 @@ var getConcert = function (input) {
 /////////////////////////////////
 
 var getSong = function (input) {
-    if (input === '') {
+    if (input === '' || typeof input === typeof undefined) {
         var randomSongs = ['Africa', 'The Sign', 'So Long, and Thanks for All the Fish']; // Defining some random songs in an array to pick from if no song is specified.
 
         input = randomSongs[Math.floor(Math.random() * randomSongs.length)]; // Then picking the song from the array.
@@ -115,7 +115,7 @@ var getSong = function (input) {
 
 var getMovie = function (input) {
     var noInput = false; // Just a variable to determine if the Mr. Nobody comment should be logged.
-    if (input === '') {
+    if (input === '' || typeof input === typeof undefined) {
         input = 'Mr. Nobody';
         userVal = 'Mr. Nobody'; // Default value, setting userVal for log.txt.
         noInput = true; // Since there was no input, this is set to 'true' to log the Mr. Nobody recommendation.
@@ -172,8 +172,8 @@ var getRandom = function () {
 /////// Retrieve Command ////////
 /////////////////////////////////
 
-var doRandom = false;
-var getCmd = function () {
+var doRandom = false; // Assuming the person's not entering do-what-it-says initially.
+var getCmd = function () { // Simple switch command to decide which function to run.
     switch (userCmd) {
         case 'spotify-this-song':
             getSong(userVal);
