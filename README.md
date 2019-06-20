@@ -59,4 +59,5 @@ That last one is to get some wild card results using the `random.txt` file.
 ## Got a demo I can see since I can't do it?
 
 Sure! I've got a video on YouTube!
+
 [![LIRI Demo](http://img.youtube.com/vi/kKP7PdjxdJY/0.jpg)](http://www.youtube.com/watch?v=kKP7PdjxdJY "LIRI Demo")
